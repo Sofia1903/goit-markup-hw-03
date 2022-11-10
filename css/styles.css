@@ -1,0 +1,197 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var( --body-color);
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+:root {
+    --body-color: #fff;
+    --text-color: #757575;
+    --a-color: #2196F3;
+    --title-color: #212121;
+    --bg-color: #F5F4FA;
+    --caption-color: #2F303A;
+    --heading-color: #FFFFFF;
+    --buttons-hover: #188CE8;
+}
+/* button */
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    background-color: var(--bg-color);
+    color: var(--title-color);
+}
+button {
+    cursor: pointer;
+}
+button:hover, button:focus {
+    background-color: var(--a-color);
+    color: var(--heading-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.buttons {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+    background-color: var(--a-color);
+    color: var(--heading-color);
+
+}
+.buttons:hover, .buttons:focus {
+    background-color: var(--buttons-hover);
+}
+.btn:active {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* links */
+.caption {
+    background-color: var(--caption-color);
+}
+.section-portfolio {
+    background-color: var(--heading-color);
+}
+a {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+}
+a:focus, a:hover {
+    color: var(--a-color);
+}
+
+.contacts a {
+    color:  var(--text-color);
+    font-style: normal;
+}
+.contacts a:hover, .contacts a:focus{
+    color: var(--a-color);
+}
+.webstudio {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+}
+span {
+    color: var(--a-color);
+}
+header {
+    background-color: var(--heading-color);
+}
+.site-nav .link.current {
+color: var(--a-color);
+}
+
+/* text */
+.heading {
+    color: var(--heading-color);
+    margin-left: 452px;
+}
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+h2 {
+    color: var(--title-color);
+}
+p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--title-color);
+}
+.team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;   
+    color: var(--title-color);
+}
+.paragraph {
+    line-height: 1.1;
+    color: var(--text-color);
+}
+.project-paragraphs {
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+
+ul {
+    list-style: none;
+}
+.projects-names {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+.benefits {
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+.work, .our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.commands {
+    background-color: var(--bg-color);
+}
+/* footer */
+footer {
+    background-color: var( --caption-color);
+
+}
+
+.studio-logo {
+    color: var(--heading-color);
+}
+
+.visually-hidden { 
+    position: absolute; 
+    width: 1px;  
+    height: 1px; 
+    margin: -1px;  
+    border: 0;  
+    padding: 0;
+    white-space: nowrap; 
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);  
+    overflow: hidden;
+}
+
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.nav-list {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 93px;
+    background-color: chocolate;
+}
