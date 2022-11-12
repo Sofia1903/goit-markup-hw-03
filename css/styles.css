@@ -1,4 +1,7 @@
-
+h1,h2,h3,p,ul {
+     margin: 0;
+     padding: 0;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var( --body-color);
@@ -94,6 +97,8 @@ a:focus, a:hover {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.1;
+    margin: 0;
+    
 }
 .contacts-header a {
     color: var(--text-color);
@@ -108,12 +113,17 @@ span {
 }
 header {
     background-color: var(--heading-color);
-    height: 80px;
 }
 .site-nav .link.current {
-color: var(--a-color);
+    color: var(--a-color);
 }
 
+.site-nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-left: 93px;
+}
 /* text */
 .heading {
     color: var(--heading-color);
@@ -121,6 +131,7 @@ color: var(--a-color);
     margin-right: 419px;
     width: 696px;
     text-align: center;
+    margin-bottom: 50px;
 }
 h1 {
     font-weight: 900;
@@ -145,16 +156,20 @@ p {
     line-height: 19px;   
     color: var(--title-color);
     padding-left: 71px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .paragraph {
     line-height: 1.1;
     color: var(--text-color);
     padding-left: 70px;
+    padding-bottom: 30px;
 }
 .project-paragraphs {
     line-height: 1.8;
     color: var(--text-color);
     padding-left: 24px;
+    padding-bottom: 20px;
 }
 
 
@@ -182,12 +197,8 @@ ul {
     line-height: 1.1;
 }
 
-.our-team {
-    padding-bottom: 50px;
-}
-.team-div {
-    background-color: var(--bg-color);
-}
+
+
 /* footer */
 footer {
     background-color: var( --caption-color);
@@ -210,22 +221,38 @@ footer {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-
+.webstudio-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 215px;
+    display: inline-block;
+}
 
 
 .section {
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
+.container-header {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
 .container {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px;
 }
-
-
+.header-class {
+    border-bottom: 1px solid #ECECEC;
+}
 
 /* WebStudio */
 
@@ -240,7 +267,8 @@ footer {
 }
 .benefits-div {
     padding-left: 215px;
-    margin: 0;
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 .work {
     text-align: center;
@@ -258,11 +286,11 @@ footer {
 .our-team {
     text-align: center;
     padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .team-ul {
     padding-left: 215px;
-    padding-bottom: 94px;
     margin-bottom: 0;
 }
 .team-list {
@@ -275,44 +303,50 @@ footer {
 
 .contacts {
     padding-left: 215px;
-    padding-top: 111px;
+    padding-bottom: 60px;
 }
-.contacts-li {
-    display: inline-block;
-}
-.header-li {
-    padding-left: 453px;
 
-}
-.header-page {
+.nav-list {
     display: flex;
+    gap: 93px;
+    align-items: center;
+    padding: 32px 0;
+    
 }
+
 .contacts-header {
-    padding-left: 1078px;
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    align-items: center;
+}
+.section-team  {
+    background-color: var(--bg-color);
+    padding-bottom: 94px;
+}
+.section-one {
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 /* Portfolio */
-.filters-div {
-    padding-left: 512px;
-    padding-top: 174px;
-    padding-bottom: 34px;
-}
+
 .btn-list {
     display: inline-block;
 }
-.webstudio {
-    padding-left: 215px;
-}
+
 .cards {
-    display: inline-block;
-    border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     margin: 0;
-    margin-right: 30px;
-    margin-bottom: 34px;
+    flex-basis: calc((100% - 2 * 30px) / 3);
 }
 .projects {
-    padding-left: 215px;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+.btn-ul {
+    margin-left: 512px;
+    margin-bottom: 34px;
 }
 
