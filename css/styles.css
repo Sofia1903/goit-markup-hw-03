@@ -33,6 +33,10 @@ body {
     color: var(--title-color);
     border: none;
     border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 button {
     cursor: pointer;
@@ -148,9 +152,6 @@ h2 {
     color: var(--title-color);
 }
 p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.8;
     color: var(--title-color);
 }
 .team {
@@ -158,21 +159,21 @@ p {
     font-size: 16px;
     line-height: 19px;   
     color: var(--title-color);
-    padding-left: 71px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 30px;
 }
 .paragraph {
     line-height: 1.1;
     color: var(--text-color);
-    padding-left: 70px;
-    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .project-paragraphs {
     line-height: 1.8;
     color: var(--text-color);
     padding-left: 24px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -186,19 +187,22 @@ ul {
     letter-spacing: 0.06em;
     color: var(--title-color);
     padding-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 .benefits {
     font-weight: 700;
     line-height: 1.1;
+    font-size: 14px;
     text-transform: uppercase;
     color: var(--title-color);
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .benefits-ul {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    
+    gap: 30px;
 }
 
 .work, .our-team {
@@ -215,7 +219,7 @@ footer {
    
 }
 .footer-li {
-    padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .studio-logo {
     color: var(--heading-color);
@@ -239,7 +243,7 @@ footer {
     font-size: 26px;
     line-height: 1.1;
     padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     padding-left: 215px;
     display: inline-block;
 }
@@ -276,44 +280,47 @@ footer {
 .benefits-list {
     display: inline-block;
     width: 270px;
-    margin-right: 30px;
 }
 
 .work {
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
 }
 .work-list {
     margin: 0;
     display: inline-block;
-    margin-left: 30px;
 }
 .work-ul {
-   
+   gap: 30px;
     display: flex;
 }
 .our-team {
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .team-ul {
+    gap: 30px;
     display: flex;
     margin-bottom: 0;
 }
 .team-list {
     margin: 0;
     background-color: var(--heading-color);
-    margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .contacts {
-    padding-left: 215px;
     padding-bottom: 60px;
+   
 }
-
+.footer-li:last-child {
+    margin-bottom: 0;
+}
 .nav-list {
     display: flex;
     align-items: center;
@@ -343,8 +350,7 @@ footer {
 }
 
 .cards {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    margin: 0;
+    
     flex-basis: calc((100% - 2 * 30px) / 3);
     background-color: var(--heading-color);
 }
@@ -360,3 +366,8 @@ footer {
     text-align: center;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
